@@ -94,16 +94,16 @@ while text_spl:
 
 
 top = max(star)
-i = 1
+i = min(star)
 
 
 while star:
-    if i not in star:
-        continue
-    elif i <= top:
+    if i in star:
         pocet = star.count(i)
         print(i, pocet *'*')
         i = i + 1
+    else:
+        break
 
 
 print('-' * 40)
